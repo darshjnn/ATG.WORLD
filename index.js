@@ -102,15 +102,18 @@ for (btn of signInBtn) {
 }
 
 // Action for favorite button
-const favorite = document.getElementById("favorite");
-favorite.addEventListener('click', () => {
-    if (favorite.classList.contains("like")) {
-        favorite.classList.toggle("like");
-        favorite.innerHTML = `<img src="/Assets/removelike.svg" alt="removLike"> 
+const favorite = document.getElementsByClassName("favorite");
+for (a of favorite) {
+    a.addEventListener('click', () => {
+        if (a.classList.contains("like")) {
+            a.classList.toggle("like");
+            a.innerHTML = `<img src="/Assets/removelike.svg" alt="removLike"> 
         <div>Remove from Favorites</div>`;
-    } else {
-        favorite.classList.toggle("like");
-        favorite.innerHTML = `<img src="/Assets/like.svg" alt="like"> 
+        } else {
+            a.classList.toggle("like");
+            a.innerHTML = `<img src="/Assets/like.svg" alt="like"> 
         <div>Add to Favorites</div>`;
-    }
-});
+        }
+    });
+}
+
