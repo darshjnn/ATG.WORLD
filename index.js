@@ -117,17 +117,3 @@ for (let i = 0; i < favorite.length; i++) {
         }
     });
 }
-
-// const favorite = document.getElementsByClassName("favorite");
-
-//     favorite[0].addEventListener('click', () => {
-//         if (favorite[0].classList.contains("like")) {
-//             favorite[0].classList.toggle("like");
-//             favorite[0].innerHTML = `<img src="/Assets/removelike.svg" alt="removLike"> 
-//         <div>Remove from Favorites</div>`;
-//         } else {
-//             favorite[0].classList.toggle("like");
-//             favorite[0].innerHTML = `<img src="/Assets/like.svg" alt="like"> 
-//         <div>Add to Favorites</div>`;
-//         }
-//     });
