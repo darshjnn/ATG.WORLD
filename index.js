@@ -103,17 +103,31 @@ for (btn of signInBtn) {
 
 // Action for favorite button
 const favorite = document.getElementsByClassName("favorite");
-for (btn of favorite) {
-    btn.addEventListener('click', () => {
-        if (btn.classList.contains("like")) {
-            btn.classList.toggle("like");
-            btn.innerHTML = `<img src="/Assets/removelike.svg" alt="removLike"> 
+// console.log(favorite[2])
+for (let i = 0; i < favorite.length; i++) {
+    favorite[i].addEventListener('click', () => {
+        if (favorite[i].classList.contains("like")) {
+            favorite[i].classList.toggle("like");
+            favorite[i].innerHTML = `<img src="/Assets/removelike.svg" alt="removLike"> 
         <div>Remove from Favorites</div>`;
         } else {
-            btn.classList.toggle("like");
-            btn.innerHTML = `<img src="/Assets/like.svg" alt="like"> 
+            favorite[i].classList.toggle("like");
+            favorite[i].innerHTML = `<img src="/Assets/like.svg" alt="like"> 
         <div>Add to Favorites</div>`;
         }
     });
 }
 
+// const favorite = document.getElementsByClassName("favorite");
+
+//     favorite[0].addEventListener('click', () => {
+//         if (favorite[0].classList.contains("like")) {
+//             favorite[0].classList.toggle("like");
+//             favorite[0].innerHTML = `<img src="/Assets/removelike.svg" alt="removLike"> 
+//         <div>Remove from Favorites</div>`;
+//         } else {
+//             favorite[0].classList.toggle("like");
+//             favorite[0].innerHTML = `<img src="/Assets/like.svg" alt="like"> 
+//         <div>Add to Favorites</div>`;
+//         }
+//     });
